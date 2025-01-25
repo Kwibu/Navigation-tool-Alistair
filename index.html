@@ -22,6 +22,12 @@
             border-radius: 8px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
         input {
             width: 80%;
             padding: 10px;
@@ -45,8 +51,12 @@
 <body>
     <div class="container">
         <h2>Where do you want to go?</h2>
+        <label for="startingPoint">Starting Point</label>
         <input type="text" id="startingPoint" placeholder="e.g., Mwanza, Tanzania" required />
-        <input type="text" id="destination" value="Alistair Group" readonly />
+
+        <label for="destination">Destination Point</label>
+        <input type="text" id="destination" value="Alistair James Company Ltd, 47WQ+C99, Dar es Salaam" readonly />
+
         <button onclick="getDirections()">Get Directions</button>
     </div>
 
